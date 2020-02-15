@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Roboto");
+
+body {
+	font-family: 'Lora', serif;
+	font-size: 15px;
+	margin: 0px;
+	font-weight: lighter;
+}
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: serif;
+	color: black;
+	font-size: 80px;
+	font-weight: 915;
+}
+h2 {
+	color: pink;
+	font-size: 45px;
+	font-weight: lighter;
+	font-weight: 750;
+}
+
+}
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 600px;
+	margin: 80px auto;
+}
+
+@media (max-width: 960px) {
+	/* For a screen < 960px, this CSS will be read */
+	.container {
+		width: 700px;
+	}
+}
+@media (max-width: 720px) {
+	/* For a screen < 720px, this CSS will be read */
+	.container {
+		width: 500px;
+	}
+}
+@media (max-width: 540px) {
+	/* For a screen < 540px, this CSS will be read */
+	.container {
+		width: 300px;
+	}
+}
+
+.avatar {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.btn-blue {
+	background-color: #6D71DD;
+	padding: 15px 20px;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+.btn-blue:hover {
+	background-color: black;
+	color: white;
+	}
+
+.banner {
+	background-image: url(../images/snoo.jpg); 	
+	color: black;
+	padding: 75px 80px;
+	background-size: cover;
+	background-position: center
+	linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 50%),
+ 	url('images/techstyle.jpg');
+}
+
+.banner-with-flat-filter {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/background.jpg');
+}
+
+linear-gradient(angle, start_color start_point, end_color end_point)
+.banner h1 {
+	font-size: 50px;
+}
+
+.banner h2 {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	opacity: 0.8;
+	margin-bottom: 40px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	padding:20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+	border-radius: 6px;
+	margin: 20px 0px;
+	flex-basis: 250px;
+	flex-grow: 1;
+}
+.card img {
+	width: 150px;
+	border-radius: 6px;
+}
+.card h3 {
+	flex-grow: 1;
+	padding-left: 20px;
+	font-size: 24px;
+}
